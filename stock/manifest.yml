@@ -1,0 +1,9 @@
+---
+applications:
+  - name: workshop-stock
+    path: target/stock-1.0-SNAPSHOT.jar
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    memory: 512M
+#    services:
+
+
