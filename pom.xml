@@ -5,8 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.altoros.shop</groupId>
-    <artifactId>stock</artifactId>
+    <artifactId>shop</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>stock</module>
+        <module>test</module>
+        <module>catalog</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <dependencies>
 
@@ -83,7 +89,7 @@
 
         <testResources>
             <testResource>
-                <directory>src/test/java</directory>
+                <directory>stock/src/test/java</directory>
                 <includes>
                     <include>**/*.xml</include>
                     <include>**/*.json</include>
@@ -92,7 +98,7 @@
             </testResource>
 
             <testResource>
-                <directory>src/test/resources</directory>
+                <directory>stock/src/test/resources</directory>
             </testResource>
 
         </testResources>
