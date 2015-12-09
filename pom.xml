@@ -85,7 +85,6 @@
     </dependencyManagement>
 
     <build>
-
         <testResources>
             <testResource>
                 <directory>src/test/java</directory>
