@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <stock_item id="1"
+                type="CD"
+                title="title_1"
+                description="description_1"
+            />
+
+</dataset>

@@ -1,0 +1,10 @@
+---
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/workshop_stock
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: none
+    show_sql: true
