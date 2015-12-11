@@ -91,5 +91,10 @@ public class StockResource {
         stockItemRepository.delete(stockItemToRemove);
     }
 
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public Iterable<StockItem> items() {
+        return stockItemRepository.findAll();
+    }
+
 }
 
