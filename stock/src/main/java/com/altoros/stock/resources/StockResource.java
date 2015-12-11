@@ -93,7 +93,12 @@ public class StockResource {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Iterable<StockItem> items() {
-        return stockItemRepository.findAll();
+        LOGGER.info("!!!!!! Starting stock items search");
+
+        Iterable<StockItem> items = stockItemRepository.findAll();
+        LOGGER.info("!!!!!! Finishing stock items search");
+
+        return items;
     }
 
 }

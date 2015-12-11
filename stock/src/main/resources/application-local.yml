@@ -8,3 +8,6 @@
   jpa:
     hibernate.ddl-auto: none
     show_sql: true
+
+ server:
+     port: 8080

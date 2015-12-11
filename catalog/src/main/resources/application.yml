@@ -1,0 +1,11 @@
+---
+ spring:
+  datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: ${cloud.services.mysql.connection.jdbcurl:jdbc:mysql}
+  username: ${cloud.services.mysql.connection.username}
+  password: ${cloud.services.mysql.connection.password}
+ jpa:
+  hibernate.ddl-auto: none
+  show_sql: true
+  database-platform: org.hibernate.dialect.MySQLDialect
