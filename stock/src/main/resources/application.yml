@@ -11,7 +11,10 @@
   database-platform: org.hibernate.dialect.MySQLDialect
 
  eureka:
-   client:
-     serviceUrl:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8762}/eureka/
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
 #       defaultZone: http://workshop-eureka.cfapps.io/eureka
-       defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8762}/eureka/
