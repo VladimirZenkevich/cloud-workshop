@@ -1,0 +1,6 @@
+---
+applications:
+  - name: workshop-eureka
+    path: target/eureka-server.jar
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    memory: 512M
