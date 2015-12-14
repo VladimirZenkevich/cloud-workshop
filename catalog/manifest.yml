@@ -1,0 +1,8 @@
+---
+applications:
+  - name: workshop-catalog
+    path: target/catalog.war
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    memory: 512M
+    services:
+      - eureka-service
