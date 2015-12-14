@@ -5,6 +5,7 @@ import com.altoros.stock.domain.model.StockItemRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletResponse;
 
 /**
@@ -29,20 +29,6 @@ public class StockResource {
 
     @Autowired
     private StockItemRepository stockItemRepository;
-
-
-    @PostConstruct
-    public void init() throws Exception {
-
-//        DynamicPropertyFactory configInstance = DynamicPropertyFactory.getInstance();
-//        ApplicationInfoManager applicationInfoManager = ApplicationInfoManager.getInstance();
-//
-//        DiscoveryManager.getInstance().initComponent(
-//                new MyDataCenterInstanceConfig(),
-//                new DefaultEurekaClientConfig());
-//
-//        applicationInfoManager.setInstanceStatus(InstanceInfo.InstanceStatus.UP);
-    }
 
     @RequestMapping(value = "/ping", method = RequestMethod.GET)
     public String ping() {
